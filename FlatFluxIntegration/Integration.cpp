@@ -16,6 +16,7 @@ void Integration(const std::string& OutputFilePath) {
 	std::fstream ofs;
 	int outwidth;
 	int iInterval;
+	int theZoneID;
 	//---Body---
 
 	outwidth = 20;
@@ -86,7 +87,7 @@ void Integration(const std::string& OutputFilePath) {
 	
 	for (int ZoneID = 0; ZoneID <= CellLimit; ZoneID++) {
 
-		for (int j = -ZoneID; j <= ZoneID; j = j++) {
+		for (int j = -ZoneID; j <= ZoneID; j = j+1) {
 
 			if (j == -ZoneID || j == ZoneID) {
 				iInterval = 1;
@@ -97,8 +98,8 @@ void Integration(const std::string& OutputFilePath) {
 
 			for (int i = -ZoneID; i <= ZoneID; i = i + iInterval) {
 
-				ZoneID = std::max(abs(i), abs(j));
-				Result += param_a * NP*std::pow(ZoneID + 1, param_b);
+				theZoneID = std::max(abs(i), abs(j));
+				Result += param_a * NP*std::pow(theZoneID + 1, param_b);
 			}
 		}
 
