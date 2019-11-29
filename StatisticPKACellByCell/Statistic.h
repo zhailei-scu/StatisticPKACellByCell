@@ -1,6 +1,7 @@
 #ifndef STATISTIC_H
 #define STATISTIC_H
 #include <vector>
+#include <string>
 
 class OneMinDistInfo {
 public:
