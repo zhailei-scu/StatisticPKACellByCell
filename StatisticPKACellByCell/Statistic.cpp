@@ -1,15 +1,5 @@
 #include "Statistic.h"
-#include "stdlib.h"
-#include <iostream>
-#include <string>
-#include <fstream>
-#include <sstream>
-#include <vector>
-#include "stdio.h"
-#include <algorithm>
-#include <iomanip>
-#include <map>
-#include <list>
+#include <cmath>
 
 void OneMinDistInfo::cleanup() {
 	this->SubjectZoneID = -1;
@@ -300,7 +290,7 @@ void Statistic::StartStatistic(const std::string& InputFilePath, const std::stri
 
 	}
 
-	ofs_Zone.open(StatisticPath_Zone,std::ios::out | std::ios::ate);
+	ofs_Zone.open(StatisticPath_Zone.c_str(),std::ios::out | std::ios::ate);
 
 	ofs_Zone << std::setw(outwidth) << "ZoneID"
 		<< std::setw(outwidth) << "Count"
@@ -315,7 +305,7 @@ void Statistic::StartStatistic(const std::string& InputFilePath, const std::stri
 		<< std::endl;
 
 
-	ofs_Ceil.open(StatisticPath_Ceil, std::ios::out | std::ios::ate);
+	ofs_Ceil.open(StatisticPath_Ceil.c_str(), std::ios::out | std::ios::ate);
 
 	ofs_Ceil << std::setw(outwidth) << "ZoneID"
 		<< std::setw(outwidth) << "CeilID"

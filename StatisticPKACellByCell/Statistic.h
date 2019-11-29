@@ -1,7 +1,16 @@
 #ifndef STATISTIC_H
 #define STATISTIC_H
-#include <vector>
+#include "stdlib.h"
+#include <iostream>
 #include <string>
+#include <fstream>
+#include <sstream>
+#include <vector>
+#include "stdio.h"
+#include <algorithm>
+#include <iomanip>
+#include <map>
+#include <list>
 
 class OneMinDistInfo {
 public:
