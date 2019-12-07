@@ -1,4 +1,4 @@
-#include "StatisticPKACellByCell.h"
+#include "StatisticPKAShiftedToCenterZone.h"
 #include <iostream>
 
 int main(int argc, char** argv) {
@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
 	originalDataFilePath = std::string(argv[1]);
 	outDataFilePath = std::string(argv[2]);
 
-	StatisticPKACellByCell::StartStatistic(originalDataFilePath,outDataFilePath);
+	StatisticPKAShiftedToCenterZone::StartStatistic(originalDataFilePath, outDataFilePath);
 
 	std::cout << "End of the program" << std::endl;
 

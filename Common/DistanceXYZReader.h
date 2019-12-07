@@ -1,5 +1,5 @@
-#ifndef STATISTIC_H
-#define STATISTIC_H
+#ifndef DISTANCEXYZREADER_H
+#define DISTANCEXYZREADER_H
 #include "stdlib.h"
 #include <iostream>
 #include <string>
@@ -54,29 +54,30 @@ public:
 
 
 
-class Statistic {
+class DistanceXYZReader {
 private:
-	Statistic();
-	~Statistic();
+	DistanceXYZReader();
+	~DistanceXYZReader();
 
-	Statistic(const Statistic& r) = delete;
-	Statistic operator =(const Statistic& r) = delete;
+	DistanceXYZReader(const DistanceXYZReader& r) = delete;
+	DistanceXYZReader operator =(const DistanceXYZReader& r) = delete;
 
-	static Statistic* instance;
+	static DistanceXYZReader* instance;
 
 	std::vector<OneMinDistInfo> DistInfo;
 
 public:
 
-	static Statistic* GetInstance();
+	static DistanceXYZReader* GetInstance();
 	static void ReleaseInstance();
 
 	void ReadFromFile(const std::string& InputFilePath, int& minZoneID, int& maxZoneID, int& minCeilID, int& maxCeilID);
-	void StartStatistic(const std::string& InputFilePath, const std::string& OutputFilePath);
 
+
+	std::vector<OneMinDistInfo> * GetDistInfo();
 private:
 
-	class CGarb{
+	class CGarb {
 	public:
 		CGarb();
 		~CGarb();

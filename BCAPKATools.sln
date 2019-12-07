@@ -4,10 +4,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StatisticPKACellByCell", "StatisticPKACellByCell\StatisticPKACellByCell.vcxproj", "{CD817EDF-02E3-4355-A8B5-498311AB6C09}"
+	ProjectSection(ProjectDependencies) = postProject
+		{41B916DF-C250-4F22-B986-F01EFED6CDAA} = {41B916DF-C250-4F22-B986-F01EFED6CDAA}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlatFluxIntegration", "FlatFluxIntegration\FlatFluxIntegration.vcxproj", "{FF0DE1F7-377D-468F-997A-DCC0B6E359A1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OutPutFormTrans", "OutPutFormTrans\OutPutFormTrans.vcxproj", "{2F1CF7E2-822A-49E3-83FA-90CB6A6ADC1C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxproj", "{41B916DF-C250-4F22-B986-F01EFED6CDAA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StatisticPKAShiftedToCenterZone", "StatisticPKAShiftedToCenterZone\StatisticPKAShiftedToCenterZone.vcxproj", "{F7542606-0043-465A-AD37-CFFDC7218748}"
+	ProjectSection(ProjectDependencies) = postProject
+		{41B916DF-C250-4F22-B986-F01EFED6CDAA} = {41B916DF-C250-4F22-B986-F01EFED6CDAA}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +51,22 @@ Global
 		{2F1CF7E2-822A-49E3-83FA-90CB6A6ADC1C}.Release|x64.Build.0 = Release|x64
 		{2F1CF7E2-822A-49E3-83FA-90CB6A6ADC1C}.Release|x86.ActiveCfg = Release|Win32
 		{2F1CF7E2-822A-49E3-83FA-90CB6A6ADC1C}.Release|x86.Build.0 = Release|Win32
+		{41B916DF-C250-4F22-B986-F01EFED6CDAA}.Debug|x64.ActiveCfg = Debug|x64
+		{41B916DF-C250-4F22-B986-F01EFED6CDAA}.Debug|x64.Build.0 = Debug|x64
+		{41B916DF-C250-4F22-B986-F01EFED6CDAA}.Debug|x86.ActiveCfg = Debug|Win32
+		{41B916DF-C250-4F22-B986-F01EFED6CDAA}.Debug|x86.Build.0 = Debug|Win32
+		{41B916DF-C250-4F22-B986-F01EFED6CDAA}.Release|x64.ActiveCfg = Release|x64
+		{41B916DF-C250-4F22-B986-F01EFED6CDAA}.Release|x64.Build.0 = Release|x64
+		{41B916DF-C250-4F22-B986-F01EFED6CDAA}.Release|x86.ActiveCfg = Release|Win32
+		{41B916DF-C250-4F22-B986-F01EFED6CDAA}.Release|x86.Build.0 = Release|Win32
+		{F7542606-0043-465A-AD37-CFFDC7218748}.Debug|x64.ActiveCfg = Debug|x64
+		{F7542606-0043-465A-AD37-CFFDC7218748}.Debug|x64.Build.0 = Debug|x64
+		{F7542606-0043-465A-AD37-CFFDC7218748}.Debug|x86.ActiveCfg = Debug|Win32
+		{F7542606-0043-465A-AD37-CFFDC7218748}.Debug|x86.Build.0 = Debug|Win32
+		{F7542606-0043-465A-AD37-CFFDC7218748}.Release|x64.ActiveCfg = Release|x64
+		{F7542606-0043-465A-AD37-CFFDC7218748}.Release|x64.Build.0 = Release|x64
+		{F7542606-0043-465A-AD37-CFFDC7218748}.Release|x86.ActiveCfg = Release|Win32
+		{F7542606-0043-465A-AD37-CFFDC7218748}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

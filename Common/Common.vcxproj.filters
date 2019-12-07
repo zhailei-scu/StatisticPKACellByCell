@@ -15,15 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="StatisticPKACellByCell.cpp">
+    <ClCompile Include="DistanceXYZReader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="StatisticPKACellByCell.h">
+    <ClInclude Include="DistanceXYZReader.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
