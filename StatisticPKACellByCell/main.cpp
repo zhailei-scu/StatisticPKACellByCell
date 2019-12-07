@@ -1,5 +1,6 @@
 #include "StatisticPKACellByCell.h"
 #include <iostream>
+#include <stdio.h>
 
 int main(int argc, char** argv) {
 
@@ -9,8 +10,8 @@ int main(int argc, char** argv) {
 		std::cout << "The argument number is: " << argc << std::endl;
 		std::cout << "You must special the 1) the original file path" << std::endl;
 		std::cout << "You must special the 2) the output file path" << std::endl;
-		system("pause");
-		exit(1);
+		getchar();
+		return -1;
 	}
 
 	std::string originalDataFilePath;

@@ -1,6 +1,6 @@
 CC := g++
-obj := StatisticPKACellByCell.o main.o
-exe := StatisticPKACellByCell.exe
+obj := StatisticPKAShiftedToCenterZone.o main.o
+exe := StatisticPKAShiftedToCenterZone.exe
 
 all:$(exe)
 
@@ -8,7 +8,7 @@ $(exe):$(obj)
 	$(CC) -o $@ $^ -BStatic -L../Common -lCommon
 main.o:main.cpp
 	$(CC) -c $< -o $@
-StatisticPKACellByCell.o:StatisticPKACellByCell.cpp
+StatisticPKAShiftedToCenterZone.o:StatisticPKAShiftedToCenterZone.cpp
 	$(CC) -c $< -I../Common -std=c++11 -o $@
 
 
