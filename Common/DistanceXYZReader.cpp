@@ -135,6 +135,8 @@ void DistanceXYZReader::ReadFromFile(const std::string& InputFilePath, int& minZ
 	int objectTrackID;
 	int subjectStepID;
 	int objectStepID;
+	double TruePos_xyz[3];
+	double ShiftPos_xyz[3];
 	double MinDist_xyz[3];
 	double MinDist;
 	OneMinDistInfo MinDistInfo;
@@ -174,6 +176,8 @@ void DistanceXYZReader::ReadFromFile(const std::string& InputFilePath, int& minZ
 			>> objectEventID
 			>> objectTrackID
 			>> objectStepID
+			>> TruePos_xyz[0] >> TruePos_xyz[1] >> TruePos_xyz[2]
+			>> ShiftPos_xyz[0] >> ShiftPos_xyz[1] >> ShiftPos_xyz[2]
 			>> MinDist_xyz[0] >> MinDist_xyz[1] >> MinDist_xyz[2]
 			>> MinDist;
 
