@@ -68,6 +68,7 @@ int main(int argc, char** argv) {
 		<< std::setw(OutWidth) << "PostPos_y(mm)"
 		<< std::setw(OutWidth) << "PostPos_z(mm)"
 		<< std::setw(OutWidth) << "ProcessName"
+		<< std::setw(OutWidth) << "ParticleName"
 		<< std::setw(OutWidth) << "TrackStatus"
 		<< std::endl;
 
@@ -101,6 +102,7 @@ int main(int argc, char** argv) {
 			>> prestep_x >> prestep_y >> prestep_z
 			>> poststep_x >> poststep_y >> poststep_z
 			>> processname
+			>> particleName
 			>> trackStatus;
 
 
